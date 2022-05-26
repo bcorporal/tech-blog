@@ -11,7 +11,7 @@ router.post('/', withAuth, async (req, res) => {
     console.log("Here is the new post: ",  newPost);
     res.json(newPost);
      } catch (err) {
-       console.log('IT FAILED!', err);
+       console.log('ERROR!', err);
     res.status(500).json(err);
   }
 });
